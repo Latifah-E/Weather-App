@@ -1,0 +1,503 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@200&display=swap');
+body{
+    font-family: 'Concert One', cursive;
+}
+.hero{
+    margin-left: 10%;
+    position: fixed;
+    margin-bottom: 20%;
+    width: 100%;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    width:100%;
+    min-height:100vh;
+  }
+.searcher{
+    text-align: center;
+    margin-left:29%;
+    font-size: 200%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color:black;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    border-radius: 25px;
+
+}  
+header input::placeholder{
+    color: grey;
+    font-size: 100%;
+  }
+  header input {
+    border-radius: 0%;
+  }
+.weatherbox {
+    width: 32%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 25px;
+    margin-left: 38%;
+}
+.text{
+    margin-right:25%;
+    margin-bottom:1%;
+    color: BLACK;
+    text-align: center;
+    font-size: 250%;
+}
+.mybutton{
+    text-align:center;
+    margin-left:36%;
+    background-color:#0000009f;
+    border:none;
+    border-radius:9px;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    color:black;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.city {
+    text-align: center;
+    font-size: 250%;
+}
+.weathericon {
+    width: 25%;
+}
+.icons{
+    text-align: center;
+}
+.temp {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 350%;
+}
+.date{
+    text-align: center;
+    font-size: 133%;
+    white-space: nowrap;
+}
+
+.humidity,.pressure{
+    overflow: hidden;
+}
+.humidity {
+    float: right;
+    padding-right: 42%;
+    font-size: 250%;
+    margin-bottom: 4%;
+}
+.pressure {
+    float: right;
+    padding-right: 40%;
+    font-size: 220%;
+}
+.weather {
+    text-align: center;
+    font-size: 200%;
+    margin-top: 28%;
+    white-space: nowrap;
+    margin-left: -4%;
+}
+.buttonrefr{
+    text-align: center;
+}
+.maincontext{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+}
+p {
+    font-size: 139%;
+}
+.date{
+    padding-top:5%;
+    font-size: 167%;
+}
+/* @media(max-width:2560px){
+    #myVideo {
+        position: fixed;
+        width:120%;
+        min-height:100vh;
+      }
+    h1{
+            text-align: center;
+            font-size: 177%;
+        }
+    .searcher {
+            text-align: center;
+            margin-left: 29%;
+            font-size: 260%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+    }
+    .city {
+        text-align: center;
+        font-size: 266%;
+    }
+    .date {
+        padding-top: 5%;
+        font-size: 180%;
+    }
+    .humidity {
+        float: right;
+        padding-right: 45%;
+        font-size: 250%;
+        margin-bottom: 4%;
+    }
+    .pressure {
+        float: right;
+        padding-right: 42%;
+        font-size: 229%;
+    }
+    .weather {
+        text-align: center;
+        font-size: 209%;
+        margin-top: 24%;
+        white-space: nowrap;
+        margin-left: -5%;
+    }
+}
+@media(max-width:2284px){
+    #myVideo {
+        position: fixed;
+        width:140%;
+        min-height:100vh;
+      }
+    }
+
+@media(max-width:2014px){
+    .weather {
+            text-align: center;
+            font-size: 219%;
+            margin-top: 29%;
+            white-space: nowrap;
+            margin-left: -6%;
+    }
+    .searcher {
+            text-align: center;
+            margin-left: 27%;
+            font-size: 260%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+    }
+}
+@media(max-width:1637px){
+    .weather {
+        text-align: center;
+        font-size: 219%;
+        margin-top: 29%;
+        white-space: nowrap;
+        margin-left: 34%;
+    }
+    .searcher {
+            text-align: center;
+            margin-left: 25%;
+            font-size: 260%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+    }
+    .humidity {
+        float: right;
+        padding-right: 41%;
+        font-size: 250%;
+        margin-bottom: 4%;
+    }
+        .pressure {
+            float: right;
+            padding-right: 37%;
+            font-size: 229%;
+        }
+    
+}
+@media(max-width:1429px){
+    .weather {
+        text-align: center;
+        font-size: 219%;
+        margin-top: 35%;
+        white-space: nowrap;
+        margin-left: -5%;
+    }
+}
+@media(max-width:1341px){
+    .weather {
+        text-align: center;
+        font-size: 219%;
+        margin-top: 35%;
+        white-space: nowrap;
+        margin-left: 30%;
+    }
+} */
+@media(max-width:1024px){
+    #myVideo {
+        position: fixed;
+        width:250%;
+        min-height:100vh;
+      }
+    h1{
+        text-align: center;
+        font-size: 149%;
+    }
+    .searcher {
+        text-align: center;
+        margin-left: 22%;
+        font-size: 203%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    .maincontext {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 123%;
+    }
+    .weatherbox {
+        width: 48%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 25px;
+        margin-left: 16%;
+        margin-top: 14%;
+    }
+}
+@media(max-height:900px){
+    #myVideo {
+        position: fixed;
+        width:400%;
+        min-height:100vh;
+      }
+}
+@media(max-width:800px){
+    .searcher {
+        text-align: center;
+        margin-left: 17%;
+        font-size: 203%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    .weather {
+        text-align: center;
+        font-size: 200%;
+        margin-top: 36%;
+        white-space: nowrap;
+        margin-left: -4%;
+    }
+    .pressure {
+        float: right;
+        padding-right: 34%;
+        font-size: 220%;
+    }
+    #myVideo {
+        position: fixed;
+        width:290%;
+        min-height:100vh;
+      }
+}
+@media(max-width:600px){
+    h1 {
+        text-align: center;
+        font-size: 100%;
+    }
+    .searcher {
+        text-align: center;
+        margin-left: 14%;
+        font-size: 167%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    .weatherbox {
+    width: 48%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-top: 14%;
+}
+}
+@media(max-width:420px){
+    h1{text-align: center;
+        font-size: 72%;
+    }
+    .searcher {
+        text-align: center;
+        margin-left: 14%;
+        font-size: 136%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    #myVideo {
+        position: fixed;
+        width: 395%;
+        min-height: 100vh;
+    }
+      .city {
+        text-align: center;
+        font-size: 197%;
+    }
+    .date {
+        padding-top: 5%;
+        font-size: 119%;
+    }
+    .weathericon {
+        width: 37%;
+    }
+    .humidity {
+        float: right;
+        padding-right: 32%;
+        font-size: 214%;
+        margin-bottom: 4%;
+    }
+    .weather {
+        text-align: center;
+        font-size: 188%;
+        margin-top: 50%;
+        white-space: nowrap;
+        margin-left: -4%;
+    }
+    .pressure {
+        float: right;
+        padding-right: 27%;
+        font-size: 220%;
+    }
+    .weatherbox {
+        width: 48%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 25px;
+        margin-left: 12%;
+        margin-top: 14%;
+    }
+    #myVideo {
+        position: fixed;
+        width:360%;
+        min-height:100vh;
+      }
+}
+@media(max-width:360px){
+    h1{text-align: center;
+        font-size: 72%;
+    }
+    .searcher {
+            text-align: center;
+            margin-left: 11%;
+            font-size: 136%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
+    }
+    #myVideo {
+        position: fixed;
+        width:390%;
+        min-height:100vh;
+      }
+      .city {
+        text-align: center;
+        font-size: 197%;
+    }
+    .date {
+        padding-top: 5%;
+        font-size: 119%;
+    }
+    .weathericon {
+        width: 37%;
+    }
+    .humidity {
+        float: right;
+        padding-right: 32%;
+        font-size: 214%;
+        margin-bottom: 4%;
+    }
+    .weather {
+        text-align: center;
+        font-size: 188%;
+        margin-top: 50%;
+        white-space: nowrap;
+        margin-left: -4%;
+    }
+    .pressure {
+        float: right;
+        padding-right: 27%;
+        font-size: 220%;
+    }
+    .weatherbox {
+        width: 48%;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 25px;
+        margin-left: 12%;
+        margin-top: 14%;
+    }
+    h1{
+        margin-left:11%;
+    }
+}
+
+@media(max-width:330px){
+    .searcher {
+        text-align: center;
+        margin-left: 6%;
+        font-size: 136%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        color: black;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    .city {
+        text-align: center;
+        font-size: 162%;
+    }
+    .date {
+        padding-top: 5%;
+        font-size: 106%;
+    }
+    .pressure {
+        float: right;
+        padding-right: 21%;
+        font-size: 220%;
+    }
+    .weather {
+        text-align: center;
+        font-size: 188%;
+        margin-top: 56%;
+        white-space: nowrap;
+        margin-left: -4%;
+    }
+}
+
